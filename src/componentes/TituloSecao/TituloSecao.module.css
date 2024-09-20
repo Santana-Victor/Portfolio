@@ -1,0 +1,12 @@
+.titulo_secao {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--cor-texto-terciaria);
+}
+
+@media (max-width: 480px) {
+  .titulo_secao {
+    font-size: 2.4rem;
+  }
+}

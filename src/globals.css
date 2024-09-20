@@ -1,0 +1,25 @@
+:root {
+  --background-terciario: #61ffca;
+  --cor-texto-primaria: #ffffff;
+  --cor-texto-secundaria: #61ffca;
+  --cor-texto-terciaria: #30b488;
+  --cor-texto-quaternaria: #000000;
+  --hover-cor-primaria: #61ffca;
+  --borda-cor-primaria: #ffffff;
+  --cor-sombra-texto: #474747;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--cor-texto-primaria);
+  list-style: none;
+  text-decoration: none;
+}
