@@ -1,0 +1,26 @@
+.secao_sobre {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto;
+  padding: 15rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+}
+
+.secao_sobre .container_texto {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.secao_sobre p {
+  font-size: 2rem;
+  color: var(--cor-texto-quaternaria);
+}
+
+.secao_sobre .link {
+  font-weight: 700;
+  color: var(--cor-texto-terciaria);
+}
