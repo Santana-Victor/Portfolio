@@ -45,38 +45,6 @@
   margin-bottom: 5rem;
 }
 
-.secao_banner ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.secao_banner .link_rede_social {
-  padding: 1rem;
-  border: 0.1rem solid var(--borda-cor-primaria);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.secao_banner .link_rede_social:hover {
-  border: 0.1rem solid var(--hover-cor-primaria);
-  transform: scale(1.1);
-}
-
-.secao_banner .icone {
-  font-size: 3rem;
-  fill: var(--cor-texto-primaria);
-  transition: 0.3s;
-}
-
-.secao_banner .icone:hover {
-  fill: var(--hover-cor-primaria);
-}
-
 @media (min-width: 1024px) {
   .secao_banner .container_imagem {
     background-image: url('../../assets/banner-desktop.jpg');
@@ -90,13 +58,5 @@
 
   .secao_banner p {
     font-size: 1.6rem;
-  }
-
-  .secao_banner .link_rede_social {
-    padding: 0.5rem;
-  }
-
-  .secao_banner .icone {
-    font-size: 2rem;
   }
 }
