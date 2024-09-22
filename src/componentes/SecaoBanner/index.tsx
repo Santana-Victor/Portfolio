@@ -3,6 +3,10 @@ import styles from './SecaoBanner.module.css';
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 export default function SecaoBanner() {
+  const urlLinkedin = import.meta.env.VITE_URL_LINKEDIN as string;
+  const urlGithub = import.meta.env.VITE_URL_GITHUB as string;
+  const urlWhatsapp = import.meta.env.VITE_URL_WHATSAPP as string;
+
   return (
     <section className={styles.secao_banner}>
       <div className={styles.container_imagem}></div>
@@ -15,9 +19,7 @@ export default function SecaoBanner() {
             <li>
               <a
                 className={styles.link_rede_social}
-                href={
-                  'https://www.linkedin.com/in/victor-augusto-santana-lopes-9821a0236/'
-                }
+                href={urlLinkedin}
                 target={'_blank'}
               >
                 <FaLinkedinIn className={styles.icone} />
@@ -26,7 +28,7 @@ export default function SecaoBanner() {
             <li>
               <a
                 className={styles.link_rede_social}
-                href={'https://github.com/Santana-Victor/'}
+                href={urlGithub}
                 target={'_blank'}
               >
                 <FaGithub className={styles.icone} />
@@ -35,7 +37,7 @@ export default function SecaoBanner() {
             <li>
               <a
                 className={styles.link_rede_social}
-                href={'https://wa.me/5585989288161/'}
+                href={urlWhatsapp}
                 target={'_blank'}
               >
                 <FaWhatsapp className={styles.icone} />
