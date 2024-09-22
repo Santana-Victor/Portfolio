@@ -35,18 +35,20 @@
   cursor: pointer;
 }
 
-.header .link:hover {
-  color: var(--hover-cor-primaria);
+@media (min-width: 1024px) {
+  .header .link:hover {
+    color: var(--hover-cor-primaria);
+  }
 }
 
 @media (max-width: 480px) {
   .header .logo {
     width: 100px;
   }
-  /*
+
   .header .links {
     gap: 1rem;
-  }*/
+  }
 
   .header .link {
     font-size: 1.6rem;
