@@ -31,11 +31,13 @@
 }
 
 .card_projeto a {
+  width: 80%;
+  padding: 1rem;
   font-size: 1.8rem;
   text-transform: uppercase;
   background-color: var(--background-primario);
-  padding: 1rem 1.5rem;
   border-radius: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
