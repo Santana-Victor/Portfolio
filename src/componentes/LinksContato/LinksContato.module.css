@@ -15,19 +15,21 @@
   transition: 0.3s;
 }
 
-.container_links .link_contato:hover {
-  border: 0.1rem solid var(--hover-cor-primaria);
-  transform: scale(1.1);
-}
-
 .container_links .icone {
   font-size: 3rem;
   fill: var(--cor-texto-primaria);
   transition: 0.3s;
 }
 
-.container_links .icone:hover {
-  fill: var(--hover-cor-primaria);
+@media (min-width: 1024px) {
+  .container_links .link_contato:hover {
+    border: 0.1rem solid var(--hover-cor-primaria);
+    transform: scale(1.1);
+  }
+
+  .container_links .icone:hover {
+    fill: var(--hover-cor-primaria);
+  }
 }
 
 @media (max-width: 480px) {
