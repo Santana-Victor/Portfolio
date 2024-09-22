@@ -1,5 +1,5 @@
 :root {
-  --background-terciario: #61ffca;
+  --background-primario: #30b488;
   --cor-texto-primaria: #ffffff;
   --cor-texto-secundaria: #61ffca;
   --cor-texto-terciaria: #30b488;
@@ -11,7 +11,6 @@
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
 }
 
 * {
