@@ -25,4 +25,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Este é o projeto do meu portfólio.
 
-- [Acesse o projeto finalizado, online](https://portfolio-six-iota-72.vercel.app/)
+- [Acesse o projeto finalizado, online](https://portfolio-delta-orpin-32.vercel.app/)
