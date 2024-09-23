@@ -5,7 +5,6 @@ import LinksContato from '../LinksContato';
 export default function SecaoBanner() {
   return (
     <section className={styles.secao_banner}>
-      <div className={styles.container_imagem}></div>
       <div className={styles.container_infos}>
         <TituloSecao ehTextoComSombra={true}>portfólio</TituloSecao>
         <h1 className={'sombra_texto'}>Victor Santana</h1>

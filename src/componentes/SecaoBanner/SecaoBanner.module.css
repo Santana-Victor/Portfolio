@@ -1,11 +1,5 @@
 .secao_banner {
   width: 100%;
-  position: relative;
-}
-
-.secao_banner .container_imagem {
-  width: 100%;
-  height: 100dvh;
   background-image: url('../../assets/banner-mobile.jpg');
   background-position: center;
   background-size: cover;
@@ -17,22 +11,16 @@
   width: 100%;
   max-width: 102.4rem;
   margin: 0 auto;
-  padding: 2rem 1.5rem 0;
+  padding: 18rem 1.5rem;
   display: flex;
   flex-direction: column;
   letter-spacing: 0.2rem;
   text-align: center;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .secao_banner h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 8rem;
-
   margin-bottom: 1rem;
 }
 
@@ -41,12 +29,11 @@
   font-size: 3rem;
   font-weight: 400;
   text-transform: uppercase;
-
   margin-bottom: 5rem;
 }
 
 @media (min-width: 1024px) {
-  .secao_banner .container_imagem {
+  .secao_banner {
     background-image: url('../../assets/banner-desktop.jpg');
   }
 }
