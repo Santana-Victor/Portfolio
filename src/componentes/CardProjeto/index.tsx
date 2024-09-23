@@ -13,8 +13,8 @@ export default function CardProjeto({ projeto }: CardProjetoProps) {
           src={projeto.imagemProjeto}
           alt={`projeto ${projeto.titulo}`}
           className={styles.imagem_projeto}
-          width={projeto.width}
-          height={projeto.height}
+          width={projeto.larguraImagem}
+          height={projeto.alturaImagem}
           loading={'lazy'}
         />
         <h3>{projeto.titulo}</h3>

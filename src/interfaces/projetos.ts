@@ -4,6 +4,6 @@ export interface IProjeto {
   linkProjetoOnline: string;
   linkCodigoProjeto: string;
   imagemProjeto: string;
-  width: number;
-  height: number;
+  larguraImagem: number;
+  alturaImagem: number;
 }

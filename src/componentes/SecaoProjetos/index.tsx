@@ -1,30 +1,16 @@
 import styles from './SecaoProjetos.module.css';
 import TituloSecao from '../TituloSecao';
 import CardProjeto from '../CardProjeto';
-import { useEffect, useState } from 'react';
-import { IProjeto } from '../../interfaces/projetos';
+import useObterDadosProjetos from '../../hooks/useObterDadosProjetos';
 
 export default function SecaoProjetos() {
-  const [projetos, setProjetos] = useState<IProjeto[]>([]);
-  const [ehErroRequisicao, setEhErroRequisicao] = useState(false);
-
-  const urlAPI = import.meta.env.VITE_URL_API as string;
-
-  useEffect(() => {
-    fetch(urlAPI)
-      .then((resposta) => resposta.json())
-      .then((dados: IProjeto[]) => setProjetos(dados))
-      .catch(() => setEhErroRequisicao(true));
-  }, [urlAPI]);
+  const { projetos } = useObterDadosProjetos();
 
   return (
     <section className={styles.secao_projetos}>
       <TituloSecao ehTextoComSombra={false}>meus projetos</TituloSecao>
-      {ehErroRequisicao ? (
-        <div className={styles.erro_requisicao}>
-          <p>Sinto muito, houve algum problema!</p>
-          <p>Por favor, volte mais tarde.</p>
-        </div>
+      {!projetos.length ? (
+        <p className={styles.erro}>Nenhum projeto encontrado!</p>
       ) : (
         <div className={styles.container_projetos}>
           {projetos.map((projeto) => (
