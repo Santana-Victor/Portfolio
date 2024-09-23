@@ -11,13 +11,23 @@ export default function SecaoSobre() {
       <div className={styles.container_texto}>
         <p>
           Olá, meu nome é{' '}
-          <a className={styles.link} href={urlLinkedin} target={'_blank'}>
+          <a
+            className={styles.link}
+            href={urlLinkedin}
+            target={'_blank'}
+            title={'Ir ao meu perfil no linkedin'}
+          >
             Victor
           </a>
           , um desenvolvedor Front-end (pretensão a Full stack), curioso e
           entusiasta de tecnologia! Meu interesse em desenvolvimento web surgiu
           em 2023 quando conheci a{' '}
-          <a className={styles.link} href={urlDevMedia} target={'_blank'}>
+          <a
+            className={styles.link}
+            href={urlDevMedia}
+            target={'_blank'}
+            title={'Ir para o site da DevMedia'}
+          >
             DevMedia
           </a>
           , comecei estudando de forma autodidata, construindo pequenos sites em

@@ -6,7 +6,11 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div>
-        <a href={'/'} className={styles.link_home}>
+        <a
+          href={'/'}
+          className={styles.link_home}
+          aria-label={'Página inicial'}
+        >
           <img
             className={styles.logo}
             src={Logo}
@@ -23,6 +27,7 @@ export default function Header() {
                 smooth={true}
                 duration={500}
                 className={styles.link}
+                title={'Ir à seção sobre mim'}
               >
                 Sobre
               </Link>
@@ -33,6 +38,7 @@ export default function Header() {
                 smooth={true}
                 duration={500}
                 className={styles.link}
+                title={'Ir à seção meus projetos'}
               >
                 Projetos
               </Link>
@@ -43,6 +49,7 @@ export default function Header() {
                 smooth={true}
                 duration={500}
                 className={styles.link}
+                title={'Ir à seção contate-me'}
               >
                 Contato
               </Link>

@@ -19,10 +19,18 @@ export default function CardProjeto({ projeto }: CardProjetoProps) {
         />
         <h3>{projeto.titulo}</h3>
         <div className={styles.links}>
-          <a href={projeto.linkProjetoOnline} target={'_blank'}>
+          <a
+            href={projeto.linkProjetoOnline}
+            target={'_blank'}
+            title={'Ir para o projeto online'}
+          >
             Ir para o projeto
           </a>
-          <a href={projeto.linkCodigoProjeto} target={'_blank'}>
+          <a
+            href={projeto.linkCodigoProjeto}
+            target={'_blank'}
+            title={'Ir para o repositório do projeto no Github'}
+          >
             Ir para o repositório
           </a>
         </div>
