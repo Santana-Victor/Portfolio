@@ -9,7 +9,10 @@ export default function useObterDadosProjetos() {
   useEffect(() => {
     fetch(urlAPI)
       .then((resposta) => resposta.json())
-      .then((dados: IProjeto[]) => setProjetos(dados.reverse()));
+      .then((dados: IProjeto[]) => {
+        const projetos = dados.reverse();
+        setProjetos(projetos);
+      });
   }, []);
 
   return {
