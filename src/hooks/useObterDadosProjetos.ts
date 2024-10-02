@@ -1,15 +1,15 @@
-import { IProjeto } from '../interfaces/projetos';
+import IProjeto from '../interfaces/Projeto.interface';
 import { useEffect, useState } from 'react';
 
-const urlDadosMockados = import.meta.env.VITE_URL_DADOS_MOCKADOS as string;
+const urlAPI = import.meta.env.VITE_URL_API as string;
 
 export default function useObterDadosProjetos() {
   const [projetos, setProjetos] = useState<IProjeto[]>([]);
 
   useEffect(() => {
-    fetch(urlDadosMockados)
+    fetch(urlAPI)
       .then((resposta) => resposta.json())
-      .then((dados: IProjeto[]) => setProjetos(dados));
+      .then((dados: IProjeto[]) => setProjetos(dados.reverse()));
   }, []);
 
   return {
